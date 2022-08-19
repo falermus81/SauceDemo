@@ -25,5 +25,7 @@ public class WebStepProducts {
         webPageProducts.click(By.linkText(productName));
         webPageProducts.goToDetail();
         webPageDetail.click(webPageDetail.buttonAddToCart);
+        webPageDetail.click(webPageDetail.linkShoppingCart);
+        webPageDetail.goToCart();
     }
 }
